@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-image: url("/portfolio/images-src/bg.png");
+
+}
+
+.container {
+  width: 550px;
+  background: rgba(218, 217, 217, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(117, 117, 117, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  margin-top: 100px;
+}
+
+input {
+  width: 500px;
+  height: 100px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-left: 25px;
+  background-color: #ffffffa4;
+  border: none;
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 4rem;
+  text-align: center; 
+}
+
+.container-input {
+  display: flex;
+}
+
+.container-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 15px;
+  justify-items: center; 
+}
+
+.container-buttons button {
+  padding: 0;
+  font-family: monospace;
+  font-size: 40px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+}
+
+#number {
+  background-color: grey;
+}
+
+#operator {
+  color: white;
+  background-color: orange;
+}
+
+#operator:hover {
+  background-color: rgb(212, 140, 5);
+}
+
+#operator:active {
+  background-color: rgb(182, 121, 9);
+}
+
+#number:hover {
+  background-color: rgb(97, 97, 97);
+}
+
+#number:active {
+  background-color: rgb(66, 66, 66);
+}
+
+
+@media (max-width: 553px) {
+  .container {
+      width: 500px;
+  }
+
+  .container-input input {
+      width: 450px;
+  }
+
+  .container-buttons button {
+      height: 90px;
+      width: 90px;
+      font-size: 1.5rem;
+  }
+}
+
+
+@media (max-width: 501px) {
+  .container {
+      width: 400px;
+  }
+
+  .container-input input {
+      width: 350px;
+  }
+
+  .container-buttons button {
+      height: 65px;
+      width: 65px;
+      font-size: 1.5rem;
+  }
+}
+
+
+@media (max-width: 409px) {
+  .container {
+      width: 350px;
+  }
+
+  .container-input input {
+      width: 300px;
+  }
+
+  .container-buttons button {
+      height: 50px; 
+      width: 50px; 
+      font-size: 1.3rem;
+  }
+}

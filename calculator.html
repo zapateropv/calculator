@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="icon" type="image/jpg" href="/portfolio/images-src/fabicon.jpg">
+</head>
+<body>
+    
+ 
+
+<div class= "container">
+
+    <div class="container-input">
+        <input type="text" required id="display">
+    </div>
+     
+
+    <div class="container-buttons">
+        <button id="operator" class="function1" onclick="toDisplay('+')">+</button>
+        <button id="number"  onclick="toDisplay('7')">7</button>
+        <button id="number" onclick="toDisplay('8')">8</button>
+        <button id="number" onclick="toDisplay('9')">9</button>
+        <button id="operator" class="function1" onclick="toDisplay('-')">-</button>
+        <button id="number" onclick="toDisplay('4')">4</button>
+        <button id="number" onclick="toDisplay('5')">5</button>
+        <button id="number" onclick="toDisplay('6')">6</button>
+        <button id="operator" class="function1" onclick="toDisplay('*')">x</button>
+        <button id="number" onclick="toDisplay('1')">1</button>
+        <button id="number" onclick="toDisplay('2')">2</button>
+        <button id="number" onclick="toDisplay('3')">3</button>
+        <button id="operator" class="function1" onclick="toDisplay('/')">/</button>
+        <button id="number" onclick="toDisplay('0')">0</button>
+        <button id="number" class="function1" onclick="toDisplay('.')">.</button>
+
+
+        <button id="number" class="total" onclick="equal()">=</button>
+        <button id="operator" class="clear">C</button>
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <script src="calculator.js"> </script>
+</body>
+</html>
